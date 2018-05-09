@@ -6077,6 +6077,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="1206" value="1uF"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="1206" value="1uF"/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1M"/>
 </parts>
 <sheets>
 <sheet>
@@ -6137,6 +6138,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY5" gate="G$1" x="68.58" y="96.52"/>
 <instance part="C6" gate="G$1" x="76.2" y="78.74" rot="R180"/>
 <instance part="C7" gate="G$1" x="76.2" y="93.98" rot="R180"/>
+<instance part="R9" gate="G$1" x="109.22" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6249,10 +6251,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="58.42" y="147.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="HOST"/>
-<wire x1="109.22" y1="60.96" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
 <label x="106.68" y="40.64" size="1.778" layer="95" rot="R180"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="43.18" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -6502,6 +6504,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="VOUTL"/>
 <wire x1="88.9" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <label x="66.04" y="86.36" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="HOST"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="60.96" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

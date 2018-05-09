@@ -772,6 +772,7 @@ design rules under a new name.</description>
 <element name="PCM2707-1:R1" library="SparkFun-Passives" package="0805" value="1M" x="-2.286" y="-53.34"/>
 <element name="PCM2707-1:R2" library="SparkFun-Passives" package="0805" value="22" x="-5.334" y="-53.34"/>
 <element name="PCM2707-1:R3" library="SparkFun-Passives" package="0805" value="22" x="-8.382" y="-53.34"/>
+<element name="PCM2707-1:C1" library="SparkFun-Passives" package="EIA3216-KIT" value="0.1uF" x="-5.08" y="-57.404"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1060,7 +1061,7 @@ design rules under a new name.</description>
 <wire x1="26.924" y1="10.414" x2="28.0416" y2="10.414" width="1.016" layer="1"/>
 <wire x1="28.0416" y1="10.414" x2="28.067" y2="10.4394" width="1.016" layer="1"/>
 </signal>
-<signal name="PCM2707-1:GNDA">
+<signal name="PCM2707-1:DGND">
 <contactref element="PCM2707-1:U$1" pad="16"/>
 <contactref element="PCM2707-1:R1" pad="1"/>
 <contactref element="PCM2707-1:J1" pad="4"/>
@@ -1093,6 +1094,16 @@ design rules under a new name.</description>
 <contactref element="PCM2707-1:U$1" pad="22"/>
 <contactref element="PCM2707-1:R3" pad="1"/>
 <wire x1="10.0076" y1="-28.899" x2="-9.282" y2="-53.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PCM2707-1:3.3V">
+<contactref element="PCM2707-1:U$1" pad="21"/>
+<contactref element="PCM2707-1:C1" pad="A"/>
+<wire x1="10.0076" y1="-29.699" x2="-3.43" y2="-57.404" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PCM2707-1:GNDA">
+<contactref element="PCM2707-1:U$1" pad="20"/>
+<contactref element="PCM2707-1:C1" pad="C"/>
+<wire x1="10.0076" y1="-30.499" x2="-6.73" y2="-57.404" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
