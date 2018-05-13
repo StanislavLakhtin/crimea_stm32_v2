@@ -6890,6 +6890,16 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND2" device=""/>
 <part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="39.2"/>
+<part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="AGND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="C18" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="100uF"/>
+<part name="C19" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="10uF"/>
+<part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="C20" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="10uF"/>
+<part name="C21" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="100uF"/>
+<part name="C22" library="SparkFun-Passives" deviceset="CAP" device="1206" value="0.1uF"/>
+<part name="C23" library="SparkFun-Passives" deviceset="CAP" device="1206" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7050,6 +7060,42 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <instance part="R13" gate="G$1" x="233.68" y="96.52" smashed="yes">
 <attribute name="NAME" x="227.838" y="97.0026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="236.474" y="97.282" size="1.778" layer="96"/>
+</instance>
+<instance part="P-1" gate="1" x="256.54" y="152.4" smashed="yes">
+<attribute name="VALUE" x="259.08" y="157.48" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+2" gate="1" x="187.96" y="160.02" smashed="yes">
+<attribute name="VALUE" x="198.12" y="160.02" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="AGND10" gate="VR1" x="231.14" y="144.78" smashed="yes">
+<attribute name="VALUE" x="241.3" y="144.78" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C18" gate="G$1" x="198.12" y="152.4" smashed="yes">
+<attribute name="NAME" x="191.516" y="153.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="197.358" y="149.987" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C19" gate="G$1" x="205.74" y="152.4" smashed="yes">
+<attribute name="NAME" x="199.136" y="153.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="204.978" y="149.987" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="AGND1" gate="VR1" x="205.74" y="144.78" smashed="yes">
+<attribute name="VALUE" x="203.2" y="144.78" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C20" gate="G$1" x="231.14" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="237.744" y="149.225" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="231.902" y="152.273" size="1.778" layer="96"/>
+</instance>
+<instance part="C21" gate="G$1" x="243.84" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="250.444" y="149.225" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="244.602" y="152.273" size="1.778" layer="96"/>
+</instance>
+<instance part="C22" gate="G$1" x="213.36" y="149.86" smashed="yes">
+<attribute name="NAME" x="212.471" y="152.4" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="213.741" y="150.114" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C23" gate="G$1" x="223.52" y="149.86" smashed="yes">
+<attribute name="NAME" x="222.631" y="152.4" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="221.361" y="150.114" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -7315,6 +7361,24 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <wire x1="66.04" y1="116.84" x2="78.74" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="116.84" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="-"/>
+<pinref part="AGND1" gate="VR1" pin="AGND"/>
+<pinref part="C18" gate="G$1" pin="-"/>
+<wire x1="198.12" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
+<junction x="205.74" y="147.32"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="+"/>
+<pinref part="AGND10" gate="VR1" pin="AGND"/>
+<pinref part="C21" gate="G$1" pin="+"/>
+<wire x1="231.14" y1="147.32" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
+<junction x="231.14" y="147.32"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="147.32" x2="223.52" y2="147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -7561,6 +7625,53 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="116.84" x2="246.38" y2="116.84" width="0.1524" layer="91"/>
 <label x="246.38" y="116.84" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="P+2" gate="1" pin="+12V"/>
+<wire x1="187.96" y1="154.94" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="C19" gate="G$1" pin="+"/>
+<pinref part="C18" gate="G$1" pin="+"/>
+<wire x1="205.74" y1="154.94" x2="198.12" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
+<junction x="198.12" y="154.94"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
+<junction x="205.74" y="154.94"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="LVCC+"/>
+<wire x1="203.2" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
+<label x="200.66" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="RVCC+"/>
+<wire x1="203.2" y1="104.14" x2="200.66" y2="104.14" width="0.1524" layer="91"/>
+<label x="200.66" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="C20" gate="G$1" pin="-"/>
+<pinref part="C21" gate="G$1" pin="-"/>
+<wire x1="231.14" y1="154.94" x2="243.84" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="P-1" gate="1" pin="-12V"/>
+<wire x1="243.84" y1="154.94" x2="256.54" y2="154.94" width="0.1524" layer="91"/>
+<junction x="243.84" y="154.94"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
+<junction x="231.14" y="154.94"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="LVCC-"/>
+<wire x1="203.2" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
+<label x="200.66" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="RVCC-"/>
+<wire x1="203.2" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+<label x="200.66" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

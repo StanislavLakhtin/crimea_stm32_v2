@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -5131,6 +5131,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="DGND">
+<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -5138,6 +5144,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DGND" prefix="GND">
+<description>&lt;b&gt;Digital Ground Symbol&lt;/b&gt;
+&lt;p&gt;Generic symbol for a digital ground supply.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DGND" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -5656,61 +5676,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <modules>
-<module name="I2S" prefix="" dx="30.48" dy="20.32">
-<ports>
-<port name="I2S" side="left" coord="5.08" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="PCM1794A_FRAME" library="EduAreaLib" deviceset="A4L-LOC" device=""/>
-<part name="U$3" library="EduAreaLib" deviceset="PCM1794A" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="PCM1794A_FRAME" gate="G$1" x="0" y="0"/>
-<instance part="U$3" gate="G$1" x="99.06" y="99.06"/>
-</instances>
-<busses>
-<bus name="I2S">
-<segment>
-<wire x1="68.58" y1="101.6" x2="68.58" y2="111.76" width="0.762" layer="92"/>
-<label x="67.818" y="108.712" size="1.778" layer="95" rot="R90"/>
-</segment>
-</bus>
-</busses>
-<nets>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="SCK"/>
-<wire x1="83.82" y1="101.6" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="BCK" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="BCK"/>
-<wire x1="83.82" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DATA" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="DATA"/>
-<wire x1="83.82" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LRCK" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="LRCK"/>
-<wire x1="83.82" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
 <module name="VR" prefix="" dx="30.48" dy="20.32">
 <ports>
 </ports>
@@ -6517,6 +6482,95 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 </module>
+<module name="DAC" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="">
+<attribute name="CNAME" value="PCM1794A DAC"/>
+</part>
+<part name="U$1" library="EduAreaLib" deviceset="PCM1794A" device=""/>
+<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND1" library="SparkFun-PowerSymbols" deviceset="DGND" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0">
+<attribute name="CNAME" x="0" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="101.6" y="109.22"/>
+<instance part="SUPPLY1" gate="G$1" x="91.44" y="81.28"/>
+<instance part="GND1" gate="G$1" x="76.2" y="66.04"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="MONO" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="MONO"/>
+<wire x1="86.36" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
+<label x="68.58" y="127" size="1.778" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="CHSL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="CHSL"/>
+<wire x1="86.36" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
+<label x="68.58" y="124.46" size="1.778" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="DEM" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DEM"/>
+<wire x1="86.36" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
+<label x="68.58" y="121.92" size="1.778" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="LRCK" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="LRCK"/>
+<wire x1="86.36" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<label x="66.04" y="119.38" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DATA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DATA"/>
+<wire x1="86.36" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
+<label x="66.04" y="116.84" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BCK" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="BCK"/>
+<wire x1="86.36" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
+<label x="66.04" y="114.3" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SYSCK" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SCK"/>
+<wire x1="86.36" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<label x="66.04" y="111.76" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DGND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DGND"/>
+<wire x1="86.36" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="109.22" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="G$1" pin="GND"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="FRAME1" library="EduAreaLib" deviceset="A4L-LOC" device=""/>
@@ -6535,9 +6589,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="I2S_CONVERTER" module="I2S" x="68.58" y="114.3"/>
 <moduleinst name="VR" module="VR" x="68.58" y="147.32"/>
-<moduleinst name="PCM2707-1" module="PCM2707" x="114.3" y="114.3"/>
+<moduleinst name="PCM2707-1" module="PCM2707" x="119.38" y="114.3"/>
+<moduleinst name="DAC1" module="DAC" x="172.72" y="114.3"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

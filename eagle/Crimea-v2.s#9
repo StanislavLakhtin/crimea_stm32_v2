@@ -6040,7 +6040,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="PCM2707_FRAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="U$1" library="EduAreaLib" deviceset="PCM2707" device=""/>
+<part name="U$1" library="EduAreaLib" deviceset="PCM2707" device="">
+<attribute name="SPICEPREFIX" value="U"/>
+</part>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device="" value="GND"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_04" device="LONGPADS"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1M"/>
