@@ -7462,8 +7462,8 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <part name="AGND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="23K"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.7K"/>
-<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.7K"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="??"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="23K"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.7K"/>
 <part name="C_IN+12" library="SparkFun-Passives" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="C_OUT+12" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="30uF"/>
 <part name="C_OUT-12" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="22uF"/>
@@ -7483,8 +7483,8 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="AGND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.7K"/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="??"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="7.9K"/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.7K"/>
 <part name="C_IN-5" library="SparkFun-Passives" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="C_OUT-5" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="22uF"/>
 <part name="AGND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -7514,10 +7514,13 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <sheet>
 <plain>
 <text x="165.1" y="20.32" size="1.778" layer="97" font="vector">AC-DC converter +-12-15V</text>
-<text x="195.58" y="160.02" size="1.778" layer="97" font="vector">LM2941:
+<text x="193.04" y="152.4" size="1.778" layer="97" font="vector">LM2941:
 Vref=1.275
 R11 = R12 * (Vout/Vref - 1)
-R3 = R4 * (Vout/Vref - 1)</text>
+R3 = R4 * (Vout/Vref - 1)
+LM2991:
+Vout = Vref× (1+ R2/R1 )-(Iadj*R2)
+</text>
 </plain>
 <instances>
 <instance part="AC-DC" gate="G$1" x="0" y="0"/>
