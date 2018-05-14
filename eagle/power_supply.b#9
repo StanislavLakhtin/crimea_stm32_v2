@@ -1030,15 +1030,11 @@ design rules under a new name.</description>
 <wire x1="41" y1="32" x2="37" y2="32" width="0.6096" layer="1"/>
 <wire x1="37" y1="32" x2="36" y2="31" width="0.6096" layer="1"/>
 <via x="36" y="31" extent="1-16" drill="0.35"/>
-<wire x1="36" y1="31" x2="36" y2="49" width="0.6096" layer="16"/>
-<wire x1="36" y1="49" x2="33" y2="52" width="0.6096" layer="16"/>
 <wire x1="23.2618" y1="44.03" x2="23.2618" y2="49.2218" width="1.016" layer="1"/>
 <wire x1="23.2618" y1="49.2218" x2="23.46" y2="49.42" width="1.016" layer="1"/>
-<wire x1="20.7" y1="52" x2="19.9" y2="51.2" width="0.6096" layer="16"/>
 <via x="19.9" y="51.2" extent="1-16" drill="0.35"/>
 <wire x1="19.9" y1="51.2" x2="21.68" y2="51.2" width="0.6096" layer="1"/>
 <wire x1="21.68" y1="51.2" x2="23.46" y2="49.42" width="0.6096" layer="1"/>
-<wire x1="33" y1="52" x2="20.7" y2="52" width="0.6096" layer="16"/>
 <wire x1="28.81" y1="5.66" x2="28.8782" y2="5.7282" width="1.016" layer="1"/>
 <wire x1="28.8782" y1="5.7282" x2="28.8782" y2="8" width="1.016" layer="1"/>
 <wire x1="28.8782" y1="8" x2="28.8782" y2="11.37" width="1.016" layer="1"/>
@@ -1048,6 +1044,10 @@ design rules under a new name.</description>
 <wire x1="26" y1="8" x2="27" y2="8" width="0.6096" layer="16"/>
 <via x="27" y="8" extent="1-16" drill="0.35"/>
 <wire x1="27" y1="8" x2="28.8782" y2="8" width="0.6096" layer="1"/>
+<wire x1="36" y1="31" x2="33" y2="34" width="0.6096" layer="16"/>
+<wire x1="33" y1="34" x2="33" y2="39" width="0.6096" layer="16"/>
+<wire x1="33" y1="39" x2="20.8" y2="51.2" width="0.6096" layer="16"/>
+<wire x1="20.8" y1="51.2" x2="19.9" y2="51.2" width="0.6096" layer="16"/>
 </signal>
 </signals>
 <errors>
@@ -1061,6 +1061,7 @@ design rules under a new name.</description>
 <approved hash="19,1,0300033005300500"/>
 <approved hash="19,1,e87050a7af61e49b"/>
 <approved hash="19,1,9d059d3a173a1705"/>
+<approved hash="19,1,453569d8f5947418"/>
 </errors>
 </board>
 </drawing>

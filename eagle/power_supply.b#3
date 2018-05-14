@@ -691,6 +691,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="25.894" y="41.855" size="1" layer="21" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.718" y="32.01" size="1" layer="21" font="vector"/>
 </element>
+<element name="B2" library="rectifier" library_urn="urn:adsk.eagle:library:336" package="SOIC-4" value="MB6S" x="-10" y="4"/>
 </elements>
 <signals>
 <signal name="~15V_MINUS">
