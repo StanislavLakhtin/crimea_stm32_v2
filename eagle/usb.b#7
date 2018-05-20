@@ -1341,6 +1341,16 @@ design rules under a new name.</description>
 <wire x1="22.65" y1="23.0564" x2="22.6766" y2="23.083" width="1" layer="1"/>
 <wire x1="4.73" y1="25.03" x2="4.73" y2="33.99" width="2" layer="1"/>
 <wire x1="4.73" y1="33.99" x2="6.5015" y2="35.7615" width="2" layer="1"/>
+<polygon width="0.1" layer="1">
+<vertex x="0" y="61.02"/>
+<vertex x="37.98" y="61.02"/>
+<vertex x="38.02" y="60.98"/>
+<vertex x="38.02" y="0.01"/>
+<vertex x="38.01" y="0"/>
+<vertex x="0" y="0"/>
+<vertex x="0" y="61.05"/>
+<vertex x="0" y="61.03"/>
+</polygon>
 <wire x1="14.0914" y1="23.083" x2="18.03" y2="23.15" width="0" layer="19" extent="1-1"/>
 <wire x1="19.191" y1="7.92" x2="21.8" y2="9.81" width="0" layer="19" extent="1-16"/>
 <wire x1="25.389" y1="7.92" x2="21.8" y2="9.81" width="0" layer="19" extent="1-16"/>
