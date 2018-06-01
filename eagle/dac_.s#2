@@ -5511,7 +5511,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <attribute name="CREVISION" value="0.2"/>
 <attribute name="DESIGNER" value="sl@whiteants.net"/>
 </part>
-<part name="U$1" library="EduAreaLib" deviceset="PCM1794A" device=""/>
+<part name="UK1" library="EduAreaLib" deviceset="PCM1794A" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device="" value="GND"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH1" value="10uF"/>
@@ -5544,7 +5544,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <part name="C16" library="SparkFun-Passives" deviceset="CAP" device="1206" value="2.7nF"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="C17" library="SparkFun-Passives" deviceset="CAP" device="1206" value="2.7nF"/>
-<part name="U$6" library="EduAreaLib" deviceset="TPA6120A2" device=""/>
+<part name="UK2" library="EduAreaLib" deviceset="TPA6120A2" device=""/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
@@ -5566,7 +5566,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="P-2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device="" value="GND"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="CONN_05" device=""/>
+<part name="J1" library="SparkFun-Connectors" deviceset="CONN_05" device="" value="I2S"/>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
@@ -5574,11 +5574,11 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_03" device="POLAR"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="POLAR"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR_LOCK"/>
-<part name="J5" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR" value="+3.3V"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device="" value="GND"/>
-<part name="J6" library="SparkFun-Connectors" deviceset="CONN_03" device="LONGPADS"/>
+<part name="J6" library="SparkFun-Connectors" deviceset="CONN_03" device="LONGPADS" value="5V/GND/-5V"/>
 <part name="U$7" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="J7" library="SparkFun-Connectors" deviceset="CONN_03" device="LONGPADS"/>
+<part name="J7" library="SparkFun-Connectors" deviceset="CONN_03" device="LONGPADS" value="12V/GND/-12V"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P-3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -5608,7 +5608,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <attribute name="DESIGNER" x="0" y="0" size="1.778" layer="96"/>
 <attribute name="CREVISION" x="0" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="50.8" y="109.22"/>
+<instance part="UK1" gate="G$1" x="50.8" y="109.22"/>
 <instance part="GND7" gate="1" x="33.02" y="66.04"/>
 <instance part="SUPPLY4" gate="G$1" x="17.78" y="86.36"/>
 <instance part="C2" gate="G$1" x="27.94" y="73.66" smashed="yes" rot="R90">
@@ -5699,7 +5699,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <attribute name="NAME" x="132.08" y="44.069" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.19" y="43.815" size="1.778" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="213.36" y="106.68"/>
+<instance part="UK2" gate="G$1" x="213.36" y="106.68"/>
 <instance part="R6" gate="G$1" x="182.88" y="119.38" smashed="yes">
 <attribute name="NAME" x="177.038" y="119.8626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="185.674" y="120.142" size="1.778" layer="96"/>
@@ -5777,13 +5777,19 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <instance part="R18" gate="G$1" x="30.48" y="154.94"/>
 <instance part="R20" gate="G$1" x="30.48" y="152.4"/>
 <instance part="J2" gate="J$1" x="55.88" y="167.64"/>
-<instance part="J3" gate="J$1" x="55.88" y="154.94"/>
+<instance part="J3" gate="J$1" x="55.88" y="152.4"/>
 <instance part="J4" gate="G$1" x="86.36" y="167.64"/>
 <instance part="J5" gate="G$1" x="17.78" y="53.34"/>
 <instance part="GND11" gate="1" x="35.56" y="58.42"/>
-<instance part="J6" gate="J$1" x="124.46" y="170.18"/>
+<instance part="J6" gate="J$1" x="124.46" y="170.18" smashed="yes">
+<attribute name="VALUE" x="130.048" y="164.592" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="121.92" y="175.768" size="1.778" layer="95" font="vector"/>
+</instance>
 <instance part="U$7" gate="G$1" x="137.16" y="165.1"/>
-<instance part="J7" gate="J$1" x="213.36" y="167.64"/>
+<instance part="J7" gate="J$1" x="213.36" y="167.64" smashed="yes">
+<attribute name="VALUE" x="203.2" y="160.274" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="210.82" y="173.228" size="1.778" layer="95" font="vector"/>
+</instance>
 <instance part="P+1" gate="1" x="231.14" y="175.26" smashed="yes">
 <attribute name="VALUE" x="241.3" y="175.26" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -5811,7 +5817,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <nets>
 <net name="MONO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="MONO"/>
+<pinref part="UK1" gate="G$1" pin="MONO"/>
 <wire x1="35.56" y1="127" x2="17.78" y2="127" width="0.1524" layer="91"/>
 <label x="17.78" y="127" size="1.778" layer="95" font="vector"/>
 </segment>
@@ -5823,7 +5829,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="CHSL" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CHSL"/>
+<pinref part="UK1" gate="G$1" pin="CHSL"/>
 <wire x1="35.56" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
 <label x="17.78" y="124.46" size="1.778" layer="95" font="vector"/>
 </segment>
@@ -5835,7 +5841,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="DEM" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DEM"/>
+<pinref part="UK1" gate="G$1" pin="DEM"/>
 <wire x1="35.56" y1="121.92" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
 <label x="17.78" y="121.92" size="1.778" layer="95" font="vector"/>
 </segment>
@@ -5847,7 +5853,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="LRCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="LRCK"/>
+<pinref part="UK1" gate="G$1" pin="LRCK"/>
 <wire x1="35.56" y1="119.38" x2="15.24" y2="119.38" width="0.1524" layer="91"/>
 <label x="15.24" y="119.38" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -5859,7 +5865,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="DATA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DATA"/>
+<pinref part="UK1" gate="G$1" pin="DATA"/>
 <wire x1="35.56" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
 <label x="15.24" y="116.84" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -5871,7 +5877,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="BCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="BCK"/>
+<pinref part="UK1" gate="G$1" pin="BCK"/>
 <wire x1="35.56" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 <label x="15.24" y="114.3" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -5883,7 +5889,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="SYSCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SCK"/>
+<pinref part="UK1" gate="G$1" pin="SCK"/>
 <wire x1="35.56" y1="111.76" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
 <label x="15.24" y="111.76" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -5895,7 +5901,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="DGND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DGND"/>
+<pinref part="UK1" gate="G$1" pin="DGND"/>
 <wire x1="35.56" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="109.22" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GNDA"/>
@@ -5920,7 +5926,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <pinref part="GND11" gate="1" pin="GNDA"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="AGND3L"/>
+<pinref part="UK1" gate="G$1" pin="AGND3L"/>
 <wire x1="66.04" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="124.46" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="AGND"/>
@@ -5944,7 +5950,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <junction x="68.58" y="81.28"/>
 <wire x1="68.58" y1="88.9" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <junction x="68.58" y="88.9"/>
-<pinref part="U$1" gate="G$1" pin="AGND3R"/>
+<pinref part="UK1" gate="G$1" pin="AGND3R"/>
 <wire x1="68.58" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5955,11 +5961,11 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U$4" gate="G$1" pin="AGND"/>
 <wire x1="78.74" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="AGND1"/>
+<pinref part="UK1" gate="G$1" pin="AGND1"/>
 <wire x1="66.04" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="104.14" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 <junction x="78.74" y="106.68"/>
-<pinref part="U$1" gate="G$1" pin="AGND2"/>
+<pinref part="UK1" gate="G$1" pin="AGND2"/>
 <wire x1="66.04" y1="116.84" x2="78.74" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="116.84" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 </segment>
@@ -6052,7 +6058,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="UK1" gate="G$1" pin="VDD"/>
 <wire x1="35.56" y1="106.68" x2="22.86" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="22.86" y1="106.68" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
@@ -6073,43 +6079,43 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="MUTE" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="MUTE"/>
+<pinref part="UK1" gate="G$1" pin="MUTE"/>
 <wire x1="35.56" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
 <label x="12.7" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="3"/>
-<wire x1="66.04" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
-<label x="66.04" y="157.48" size="1.778" layer="95" font="vector"/>
+<wire x1="66.04" y1="154.94" x2="63.5" y2="154.94" width="0.1524" layer="91"/>
+<label x="66.04" y="154.94" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="FMT0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="FMT0"/>
+<pinref part="UK1" gate="G$1" pin="FMT0"/>
 <wire x1="35.56" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
 <label x="12.7" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="2"/>
-<wire x1="66.04" y1="154.94" x2="63.5" y2="154.94" width="0.1524" layer="91"/>
-<label x="66.04" y="154.94" size="1.778" layer="95" font="vector"/>
+<wire x1="66.04" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
+<label x="66.04" y="152.4" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="FMT1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="FMT1"/>
+<pinref part="UK1" gate="G$1" pin="FMT1"/>
 <wire x1="35.56" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
 <label x="12.7" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="1"/>
-<wire x1="66.04" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
-<label x="66.04" y="152.4" size="1.778" layer="95" font="vector"/>
+<wire x1="66.04" y1="149.86" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
+<label x="66.04" y="149.86" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="ZERO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="ZERO"/>
+<pinref part="UK1" gate="G$1" pin="ZERO"/>
 <wire x1="35.56" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
 <label x="12.7" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -6121,7 +6127,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="!RST!" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="!RST!"/>
+<pinref part="UK1" gate="G$1" pin="!RST!"/>
 <wire x1="35.56" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
 <label x="12.7" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -6133,7 +6139,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC2L"/>
+<pinref part="UK1" gate="G$1" pin="VCC2L"/>
 <wire x1="66.04" y1="127" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
 <wire x1="66.04" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
@@ -6154,22 +6160,19 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <wire x1="78.74" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="81.28" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <junction x="83.82" y="88.9"/>
-<pinref part="U$1" gate="G$1" pin="VCC2R"/>
+<pinref part="UK1" gate="G$1" pin="VCC2R"/>
 <wire x1="66.04" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
 <junction x="83.82" y="93.98"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC1"/>
+<pinref part="UK1" gate="G$1" pin="VCC1"/>
 <wire x1="66.04" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="5V"/>
 <wire x1="91.44" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="114.3" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="111.76" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <junction x="91.44" y="114.3"/>
 <pinref part="C8" gate="G$1" pin="+"/>
-<wire x1="91.44" y1="109.22" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
-<junction x="91.44" y="111.76"/>
+<wire x1="91.44" y1="109.22" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="+"/>
 <junction x="99.06" y="114.3"/>
 </segment>
@@ -6190,9 +6193,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IOUTL-"/>
-<wire x1="66.04" y1="121.92" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="121.92" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="UK1" gate="G$1" pin="IOUTL-"/>
 <pinref part="IC1" gate="B" pin="-IN"/>
 <wire x1="124.46" y1="104.14" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
@@ -6204,17 +6205,15 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="127" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="91.44" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="124.46" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="121.92" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IOUTL+"/>
-<wire x1="66.04" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="119.38" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="121.92" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="121.92" x2="91.44" y2="127" width="0.1524" layer="91"/>
+<pinref part="UK1" gate="G$1" pin="IOUTL+"/>
+<wire x1="66.04" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="119.38" x2="91.44" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="121.92" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -6230,10 +6229,10 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCOMR"/>
+<pinref part="UK1" gate="G$1" pin="VCOMR"/>
 <pinref part="C8" gate="G$1" pin="-"/>
 <wire x1="83.82" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VCOML"/>
+<pinref part="UK1" gate="G$1" pin="VCOML"/>
 <wire x1="76.2" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="111.76" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
@@ -6243,13 +6242,13 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="IREF"/>
+<pinref part="UK1" gate="G$1" pin="IREF"/>
 <wire x1="68.58" y1="106.68" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="LIN-"/>
+<pinref part="UK2" gate="G$1" pin="LIN-"/>
 <wire x1="203.2" y1="114.3" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="114.3" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -6272,7 +6271,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IOUTR-"/>
+<pinref part="UK1" gate="G$1" pin="IOUTR-"/>
 <wire x1="104.14" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="D" pin="-IN"/>
 <wire x1="124.46" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
@@ -6303,7 +6302,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <junction x="142.24" y="58.42"/>
 <wire x1="165.1" y1="58.42" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="81.28" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="RIN-"/>
+<pinref part="UK2" gate="G$1" pin="RIN-"/>
 <wire x1="193.04" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="81.28" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
@@ -6315,14 +6314,14 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="U$6" gate="G$1" pin="LIN+"/>
+<pinref part="UK2" gate="G$1" pin="LIN+"/>
 <wire x1="203.2" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
 <junction x="187.96" y="119.38"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="LOUT"/>
+<pinref part="UK2" gate="G$1" pin="LOUT"/>
 <wire x1="228.6" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="116.84" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
@@ -6335,7 +6334,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="U$6" gate="G$1" pin="RIN+"/>
+<pinref part="UK2" gate="G$1" pin="RIN+"/>
 <wire x1="203.2" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
 <junction x="187.96" y="99.06"/>
 </segment>
@@ -6345,7 +6344,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="81.28" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="81.28" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="ROUT"/>
+<pinref part="UK2" gate="G$1" pin="ROUT"/>
 <wire x1="226.06" y1="96.52" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="96.52" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
@@ -6390,12 +6389,12 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <junction x="205.74" y="154.94"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="LVCC+"/>
+<pinref part="UK2" gate="G$1" pin="LVCC+"/>
 <wire x1="203.2" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <label x="200.66" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="RVCC+"/>
+<pinref part="UK2" gate="G$1" pin="RVCC+"/>
 <wire x1="203.2" y1="104.14" x2="200.66" y2="104.14" width="0.1524" layer="91"/>
 <label x="200.66" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6419,12 +6418,12 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <junction x="231.14" y="154.94"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="LVCC-"/>
+<pinref part="UK2" gate="G$1" pin="LVCC-"/>
 <wire x1="203.2" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
 <label x="200.66" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="RVCC-"/>
+<pinref part="UK2" gate="G$1" pin="RVCC-"/>
 <wire x1="203.2" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <label x="200.66" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6529,7 +6528,7 @@ http://focus.ti.com/lit/ds/symlink/opa2134.pdf&lt;br&gt;</description>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="127" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="68.58" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="IOUTR+"/>
+<pinref part="UK1" gate="G$1" pin="IOUTR+"/>
 <wire x1="114.3" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="78.74" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
 </segment>
